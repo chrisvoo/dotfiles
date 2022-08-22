@@ -1,0 +1,12 @@
+[user]
+	name = Christian Castelli
+	email = christian.castelli@docebo.com
+[pull]
+	rebase = true
+	ff = only
+[core]
+	excludesfile = /Users/christian.castelli/.gitignore_global
+[commit]
+	template = /Users/christian.castelli/.stCommitMsg
+[http]
+	sslVerify = true
