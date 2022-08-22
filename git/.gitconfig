@@ -6,7 +6,24 @@
 	ff = only
 [core]
 	excludesfile = /Users/christian.castelli/.gitignore_global
+	editor = vim
 [commit]
 	template = /Users/christian.castelli/.stCommitMsg
+[init]
+	defaultBranch = maintenance/weekly-70
 [http]
 	sslVerify = true
+[alias]
+	b = branch
+	c = commit
+        cm = commit -m
+        cma = commit -a -m
+        ca = commit --amend
+        caa = commit -a --amend -C HEAD
+        r = reset
+	rh = reset --hard
+	co = checkout
+	d = diff
+	s = status -bs
+	conflicts = diff --name-only --diff-filter=U
+
