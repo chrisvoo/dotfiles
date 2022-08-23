@@ -27,3 +27,5 @@
 	s = status -bs
 	conflicts = diff --name-only --diff-filter=U
 
+[push]
+	autoSetupRemote = true
