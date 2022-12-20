@@ -19,6 +19,7 @@
         cm = commit -m
         cma = commit -a -m
         ca = commit --amend
+	fo = fetch origin
         caa = commit -a --amend -C HEAD
         r = reset
 	rh = reset --hard
@@ -27,7 +28,10 @@
 	s = status -bs
 	conflicts = diff --name-only --diff-filter=U
 	parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 [push]
 	autoSetupRemote = true
 [fetch]
-        prune = true
+	prune = true
+[help]
+	autocorrect = 1
